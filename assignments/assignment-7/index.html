@@ -32,7 +32,8 @@
             <input type="radio" name="gender" id="female">
 
         </form>
-
+        <br>
+        <hr>
         <form id="account_details">
             <label for="usernameInput">Username</label>
             <input type="text" name="username" id="usernameInput">
@@ -46,40 +47,85 @@
         </form>
 
         <form id="preferences">
-            <label for="colorInput">Your Preffered color</label>
+            <label for="colorInput">Your Preferred color</label>
             <input type="color" name="color" id="colorInput">
 
             <label for="checkboxInput">Newsletter Subscription</label>
             <input type="checkbox" name="subscriptionCheckbox" id="checkboxInput">
 
-            <label for="languageSelect">Preffered Language</label>
-            <select name="usersLanguage" id="languageSelect"></select>
-            <option value="English">English</option>
-            <option value="Spanish">Spanish</option>
-            <option value="Russian">Russian</option>
-            <option value="Uzbek">Uzbek</option>
-            <option value="Turkish">Turkish</option>
+            <label for="languageSelect">Preferred Language</label>
+            <select name="usersLanguage" id="languageSelect">
+                <option value="English">English</option>
+                <option value="Spanish">Spanish</option>
+                <option value="Russian">Russian</option>
+                <option value="Uzbek">Uzbek</option>
+                <option value="Turkish">Turkish</option>
+            </select>
         </form>
-
+        <br>
+        <hr>
         <form id="attachment">
             <label for="profilePicture">Upload Your Profile Picture</label>
             <input type="file" name="avatar" id="profilePicture">
         </form>
 
         <form id="location"> 
-            <label for="websiteInput">Choose Your LOcation</label>
+            <label for="websiteInput">Choose Your Location</label>
             <input type="url" name="location" id="websiteInput">
         </form>
 
         <form id="feedback">
             <label for="rangeInput">Satisfaction Rating</label>
             <input type="range" name="rating" id="rangeInput" min="1" max="10">
-
+            <br>
             <label for="commentInput">Your Comments</label>
             <textarea name="comments" id="commentInput" cols="30" rows="5"></textarea>
         </form>
 
+        <br>
+        <hr>
+
+        <form id="schedule">
+            <label for="timeInput">Preferred Meeting Time</label>
+            <input type="time" name="meetingTime" id="timeInput">
+
+            <label for="weekInput">Preferred Meeting Day</label>
+            <input type="week" name="meetingDay" id="weekInput">
+
+            <label for="monthInput">Preferred Meeting Month</label>
+            <input type="month" name="meetingMonth" id="monthInput">
+        </form>
+
+        <form id="search">
+            <label for="searchInput">Search for Articles</label>
+            <input type="search" name="search" id="searchInput">
+
+        </form>
+
+        <br>
+
+        <form id="submit_reset">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset Form Data">
+            <button>
+                Custom Button
+                <img src="./check.png" width="10" height="10" alt="check">
+            </button>
+        </form>
+
+        <br>
         
+        <button> <img src="./thumb-up.png" width="50" height="50" alt="like"></button>
+
+
+
+        <br>
+
+        <form action=""></form>
+
+
+
+
 
         
         
