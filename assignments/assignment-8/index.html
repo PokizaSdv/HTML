@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Timed Assignment</title>
+    </head>
+    <body>
+        <h1>Quiz</h1>
+        <h2>We want to test you</h2>
+        <h3>First About you</h3>
+
+        <form id="user_information">
+            <label for="fullNameInput">Your Full Name</label>
+            <input type="text" name="name" id="fullNameInput" />
+
+            <label for="emailInput">Your Email</label>
+            <input type="email" name="email" id="emailInput" />
+        </form>
+
+        <h3>Let's Start a Quiz</h3>
+
+        <form id="Quiz">
+            <p>1.Which of them A.Navoiy's year of birth</p>
+            <label for="aAnswer">A. 1440</label>
+            <input type="radio" name="a" id="aAnswer" />
+            <br />
+            <label for="bAnswer">B. 1439</label>
+            <input type="radio" name="b" id="bAnswer" />
+            <br />
+            <label for="cAnswer">C. 1441</label>
+            <input type="radio" name="c" id="cAnswer" />
+            <br />
+            <label for="dAnswer">D. 1940</label>
+            <input type="radio" name="d" id="dAnswer" />
+        </form>
+        <br />
+
+        <form id="submit">
+            <label for="timezoneSelect">Choose your time-zone</label>
+            <select name="timezone" id="timezoneSelect">
+                <option value="UTC-12">UTC-12</option>
+                <option value="UTC-11">UTC-11</option>
+                <option value="UTC+12">UTC+12</option>
+                <option value="UTC+13">UTC+13</option>
+            </select>
+        </form>
+        <br />
+        <form>
+            <label for="messageInput"
+                >for any additional feedback suggestions</label
+            >
+        </form>
+        <input type="submit" value="Submit" />
+    </body>
+</html>
