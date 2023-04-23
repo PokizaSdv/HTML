@@ -1,29 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Input</title>
-</head>
-<body>
-    <h1>There are some examples for input form</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inputs</title>
+  </head>
+  <body>
+    <h1>We will understand the forms/inputs</h1>
     <form>
-        <label for="file-input">File</label>
-        <input type="file" id="file-input" name="file">
-
-        <label for="range-input">Range</label>
-        <input type="number" id="range-input" name="range" min="1" max="10">
+        <label for="searchInput">What are you looking for?</label>
+        <input 
+                type="search"
+                placeholder="Search"
+                name="search"
+                id="searchInput">
+                
     </form>
-     
+    <h2>Sign Up Form</h2>
     <form>
-        <label for="date-input">Year</label>
-        <input type="number" id="date-input" name="date" min="2000" max="2023">
+        <label for="fullNameInput">Full Name</label>
+        <input 
+                type="text" 
+                placeholder="Full Name" 
+                id="fullNameInput"
+                name="fullName"/>
 
-        <label for="date-input">Month</label>
-        <input type="month" id="date-input" name="month">
+        <label for="telephoneNumber">Tel</label>
+        <input    
+                type="number"       
+                placeholder="Tel number" 
+                id="telephoneNumber" 
+                name="telNumber"/>
+        <br>
+        <label for="inputEmail">Your Email</label>
+        <input 
+                type="email"
+                placeholder="Email"
+                name="email"
+                id="inputEmail">
+
+        <label for="inputPassword">Password</label>  
+        <input 
+                type="password" 
+                placeholder="Your Password" 
+                name="password" 
+                id="inputPassword">  
+        <br>
+        <label for="checkboxInput">I agree</label>
+        <input 
+            type="checkbox" 
+            name="agreement" 
+            id="checkboxInput">    
+    </form>
+    <form>
+        <p>Select your Gender</p>
+        <label for="male">Male</label>
+        <input 
+            type="radio"
+            name="gender" 
+            id="male"/>
+        
+        <label for="female">Female</label>
+        <input 
+            type="radio"
+            name="gender"
+            id="female">
+        
+        
+    </form>
+    <br>
+
+    <form>
+        <label for="profilImage">Upload Your Image</label>
+        <input 
+            type="file"
+            name="avatar"
+            id="profilImage">
+
+    </form>
+    <form>
+        <label for="colorInput">Choose Your Color</label>
+        <input 
+            type="color"
+            name="color"
+            id="colorInput">
+    </form>
+    <form>
+        <label for="dateInput">DOB</label>
+        <input type="date" name="dateOfBirth" id="dateInput">
+        
+        <label for="fileInput">Upload your Resume</label>
+        <input type="file" name="resume" id="fileInput">
+
+    </form>
+    <form>
+        <label for="rangeInput">Choose Range</label>
+        <input type="range" name="range" id="rangeInput">
+
+        <label for="datetimeInput">Show Application Filled time</label>
+        <input type="datetime-local" name="time" id="datetimeInput">
     </form>
 
+    <form>
+        <input type="reset" value="Reset Form Data">
 
-</body>
+        <input type="submit" value="Submit">
+    </form>
+  </body>
 </html>
