@@ -4,23 +4,23 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Timed Assignment</title>
+        <title>Assignment-8</title>
     </head>
     <body>
         <form>
             <label for="fullNameInput">Your Full Name</label>
             <input type="text" name="fullName" id="fullNameInput" />
 
-            <label for="EmailInput">Your Email</label>
+            <label for="emailInput">Your Email</label>
             <input type="email" name="email" id="emailInput" />
 
             <br />
 
-            <label for="rangeInput">Rate your Confidence Level</label>
+            <label for="ratingInput">Rate your Confidence Level</label>
             <input
                 type="range"
                 name="rating"
-                id="rangeInput"
+                id="ratingInput"
                 min="1"
                 max="10"
             />
@@ -29,47 +29,48 @@
             <input type="number" name="age" id="ageInput" min="18" max="99" />
 
             <p>Select your Favourite Quiz Category</p>
-            <label for="checkboxInput">History</label>
-            <input type="checkbox" name="category" id="checkboxInput" />
+            <label for="historyCategoryCheckbox">History</label>
+            <input
+                type="checkbox"
+                name="isHistoryChecked"
+                id="historyCategoryCheckbox"
+            />
             <br />
-            <label for="checkboxInput">Science</label>
-            <input type="checkbox" name="category" id="checkboxInput" />
+            <label for="scienceCategoryCheckbox">Science</label>
+            <input
+                type="checkbox"
+                name="isScienceChecked"
+                id="scienceCategoryCheckbox"
+            />
             <br />
-            <label for="checkboxInput">Sport</label>
-            <input type="checkbox" name="category" id="checkboxInput" />
+            <label for="sportCategoryCheckbox">Sport</label>
+            <input
+                type="checkbox"
+                name="isSportChecked"
+                id="sportCategoryCheckbox"
+            />
             <br />
-            <label for="checkboxInput">Literature</label>
-            <input type="checkbox" name="category" id="checkboxInput" />
+            <label for="literatureCategoryCheckbox">Literature</label>
+            <input
+                type="checkbox"
+                name="isLiteratureChecked"
+                id="literatureCategoryCheckbox"
+            />
 
-            <h1>Quiz</h1>
+            <p>Select Preferred Quiz Format</p>
+            <label for="multipleChoiceOption">Multiple Choice</label>
+            <input
+                type="radio"
+                name="isMultipleChoice"
+                id="multipleChoiceOption"
+            />
 
-            <p>1.Lorem ipsum dolor sit amet consectetur adipisicing elit?</p>
-            <label for="trueSelect">True</label>
-            <input type="radio" name="answer" id="trueSelect" />
+            <label for="trueFalseOption">True/False</label>
+            <input type="radio" name="isTrueFalse" id="trueFalseOption" />
 
-            <label for="falseSelect">False</label>
-            <input type="radio" name="answer" id="falseSelect" />
+            <label for="blankOption">Fill in the Blank</label>
+            <input type="radio" name="isBlank" id="blankOption" />
 
-            <p>2.Lorem ipsum dolor sit amet consectetur adipisicing elit?</p>
-            <label for="trueSelect">True</label>
-            <input type="radio" name="answer" id="trueSelect" />
-
-            <label for="falseSelect">False</label>
-            <input type="radio" name="answer" id="falseSelect" />
-
-            <p>3.Lorem ipsum dolor sit amet consectetur adipisicing elit?</p>
-            <label for="trueSelect">True</label>
-            <input type="radio" name="answer" id="trueSelect" />
-
-            <label for="falseSelect">False</label>
-            <input type="radio" name="answer" id="falseSelect" />
-
-            <p>4.Lorem ipsum dolor sit amet consectetur adipisicing elit?</p>
-            <label for="trueSelect">True</label>
-            <input type="radio" name="answer" id="trueSelect" />
-
-            <label for="falseSelect">False</label>
-            <input type="radio" name="answer" id="falseSelect" />
             <br />
             <hr />
             <label for="timezoneInput">Select Your time-zone</label>
@@ -103,12 +104,12 @@
                 <option value="UTC+14">UTC+14</option>
             </select>
 
-            <label for="commentInput"
+            <label for="feedbackTextarea"
                 >Add any Additional feedback or suggestions</label
             >
             <textarea
-                name="Comments"
-                id="commentInput"
+                name="feedback"
+                id="feedbackTextarea"
                 cols="80"
                 rows="10"
             ></textarea>
