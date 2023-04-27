@@ -19,7 +19,7 @@
             <label for="ratingInput">Rate your Confidence Level</label>
             <input
                 type="range"
-                name="rating"
+                name="confidenceLevel"
                 id="ratingInput"
                 min="1"
                 max="10"
@@ -61,15 +61,26 @@
             <label for="multipleChoiceOption">Multiple Choice</label>
             <input
                 type="radio"
-                name="isMultipleChoice"
+                name="preferredQuizFormat"
                 id="multipleChoiceOption"
+                value="Multiple Choice"
             />
 
             <label for="trueFalseOption">True/False</label>
-            <input type="radio" name="isTrueFalse" id="trueFalseOption" />
+            <input
+                type="radio"
+                name="preferredQuizFormat"
+                id="trueFalseOption"
+                value="True/Value"
+            />
 
             <label for="blankOption">Fill in the Blank</label>
-            <input type="radio" name="isBlank" id="blankOption" />
+            <input
+                type="radio"
+                name="preferredQuizFormat"
+                id="blankOption"
+                value="Fill in the Blank"
+            />
 
             <br />
             <hr />
