@@ -13,7 +13,7 @@
             <input
                 type="text"
                 placeholder="Full Name"
-                name="name"
+                name="fullName"
                 id="fullNameInput"
                 required
             />
@@ -42,9 +42,9 @@
             <input type="number" name="age" id="ageInput" />
 
             <label for="male">Male</label>
-            <input type="radio" name="gender" id="male" />
+            <input type="radio" name="gender" id="male" value="Male" />
             <label for="female">Female</label>
-            <input type="radio" name="gender" id="female" />
+            <input type="radio" name="gender" id="female" value="Female" />
 
             <br />
             <hr />
@@ -63,15 +63,14 @@
             <label for="colorInput">Your Preferred color</label>
             <input type="color" name="color" id="colorInput" />
 
-            <label for="checkboxInput">Newsletter Subscription</label>
-            <input
-                type="checkbox"
-                name="subscriptionCheckbox"
-                id="checkboxInput"
-            />
+            <label for="newsletterSubscriptionCheckbox"
+                >Newsletter Subscription</label
+            >
+            <input type="checkbox" name="newsletterSubscription"
+            id="newsletterSubscriptionCheckbox
 
             <label for="languageSelect">Preferred Language</label>
-            <select name="usersLanguage" id="languageSelect">
+            <select name="preferredLanguage" id="languageSelect">
                 <option value="English">English</option>
                 <option value="Spanish">Spanish</option>
                 <option value="Russian">Russian</option>
@@ -83,15 +82,15 @@
             <hr />
 
             <label for="profilePicture">Upload Your Profile Picture</label>
-            <input type="file" name="avatar" id="profilePicture" accept="img" />
+            <input type="file" name="" id="profilePicture" accept="img" />
 
-            <label for="websiteInput">Your Location</label>
-            <input type="url" name="location" id="websiteInput" />
+            <label for="ulrInput">Your Location</label>
+            <input type="url" name="location" id="ulrInput" />
 
             <label for="ratingInput">Satisfaction Rating</label>
             <input
                 type="range"
-                name="rating"
+                name="satisfactionRating"
                 id="ratingInput"
                 min="1"
                 max="10"
@@ -118,7 +117,7 @@
             <input type="month" name="meetingMonth" id="monthInput" />
 
             <label for="searchInput">Search for Articles</label>
-            <input type="search" name="search" id="searchInput" />
+            <input type="search" name="searchedArticles" id="searchInput" />
 
             <br />
 
