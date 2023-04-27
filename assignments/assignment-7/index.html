@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Assigment-7</title>
+        <style></style>
+    </head>
+    <body>
+        <form>
+            <label for="fullNameInput">Your Full Name</label>
+            <input
+                type="text"
+                placeholder="Full Name"
+                name="name"
+                id="fullNameInput"
+                required
+            />
+
+            <label for="emailInput">Your Email</label>
+            <input
+                type="email"
+                placeholder="Email"
+                name="email"
+                id="emailInput"
+                required
+            />
+            <br />
+            <label for="telNumberInput">Your Tel Number</label>
+            <input
+                type="tel"
+                placeholder="Tel Number"
+                name="telNumber"
+                id="telNumberInput"
+            />
+
+            <label for="dateInput">DOB</label>
+            <input type="date" name="dateOfBirth" id="dateInput" />
+            <br />
+            <label for="ageInput">Your Age</label>
+            <input type="number" name="age" id="ageInput" />
+
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male" />
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female" />
+
+            <br />
+            <hr />
+
+            <label for="usernameInput">Username</label>
+            <input type="text" name="username" id="usernameInput" />
+
+            <label for="passwordInput">Password</label>
+            <input type="password" name="password" id="passwordInput" />
+
+            <label for="secretMessageInput">Your Secret Message</label>
+            <input type="hidden" name="secretMessage" id="secretMessageInput" />
+
+            <br />
+
+            <label for="colorInput">Your Preferred color</label>
+            <input type="color" name="color" id="colorInput" />
+
+            <label for="checkboxInput">Newsletter Subscription</label>
+            <input
+                type="checkbox"
+                name="subscriptionCheckbox"
+                id="checkboxInput"
+            />
+
+            <label for="languageSelect">Preferred Language</label>
+            <select name="usersLanguage" id="languageSelect">
+                <option value="English">English</option>
+                <option value="Spanish">Spanish</option>
+                <option value="Russian">Russian</option>
+                <option value="Uzbek">Uzbek</option>
+                <option value="Turkish">Turkish</option>
+            </select>
+
+            <br />
+            <hr />
+
+            <label for="profilePicture">Upload Your Profile Picture</label>
+            <input type="file" name="avatar" id="profilePicture" accept="img" />
+
+            <label for="websiteInput">Your Location</label>
+            <input type="url" name="location" id="websiteInput" />
+
+            <label for="ratingInput">Satisfaction Rating</label>
+            <input
+                type="range"
+                name="rating"
+                id="ratingInput"
+                min="1"
+                max="10"
+            />
+            <br />
+            <label for="commentTextarea">Your Comments</label>
+            <textarea
+                name="comments"
+                id="commentTextarea"
+                cols="30"
+                rows="2"
+            ></textarea>
+
+            <br />
+            <hr />
+
+            <label for="timeInput">Preferred Meeting Time</label>
+            <input type="time" name="meetingTime" id="timeInput" />
+
+            <label for="weekInput">Preferred Meeting Day</label>
+            <input type="week" name="meetingDay" id="weekInput" />
+
+            <label for="monthInput">Preferred Meeting Month</label>
+            <input type="month" name="meetingMonth" id="monthInput" />
+
+            <label for="searchInput">Search for Articles</label>
+            <input type="search" name="search" id="searchInput" />
+
+            <br />
+
+            <input type="submit" value="Submit" />
+            <input type="reset" value="Reset Form Data" />
+            <button>
+                Custom Button
+                <img src="./check.png" width="10" height="10" alt="checkmark" />
+            </button>
+        </form>
+
+        <br />
+
+        <button>
+            <img src="./thumb-up.png" width="50" height="50" alt="like" />
+        </button>
+    </body>
+</html>
