@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Assignment-8.7</title>
+    </head>
+    <body>
+        <h1>Photo Contest Entry</h1>
+        <form>
+            <div>
+                <label for="fullNameInput">Your Full Name</label>
+                <input
+                    type="text"
+                    placeholder="Full Name"
+                    name="fullName"
+                    id="fullNameInput"
+                />
+
+                <label for="emailInput">Your Email Address</label>
+                <input
+                    type="email"
+                    placeholder="Email"
+                    name="email"
+                    id="emailInput"
+                />
+            </div>
+            <div>
+                <label for="imageInput">Upload Photo</label>
+                <input
+                    type="file"
+                    name="usersPhoto"
+                    id="imageInput"
+                    accept="image/*"
+                />
+
+                <label for="agreementCheckboxInput"
+                    >I'm Agree to the ontest terms and conditions</label
+                >
+                <input
+                    type="checkbox"
+                    name="agreementCheckbox"
+                    id="agreementCheckboxInput"
+                />
+            </div>
+            <div>
+                <label for="countrySelect">Select Your Country</label>
+                <select name="usersCountry" id="countrySelect">
+                    <option value="United States">United States</option>
+                    <option value="United Kingdom">United Kingdom</option>
+                    <option value="Australia">Australia</option>
+                </select>
+            </div>
+            <div>
+                <label for="descriptionTextarea"
+                    >Write a brief description or story about your photo</label
+                >
+                <textarea
+                    name="usersDescription"
+                    id="descriptionTextarea"
+                    cols="30"
+                    rows="3"
+                ></textarea>
+            </div>
+
+            <input type="submit" value="Submit" />
+        </form>
+    </body>
+</html>
