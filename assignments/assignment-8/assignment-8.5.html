@@ -28,12 +28,27 @@
             </div>
             <div>
                 <h2>Select the Priority of the Issue</h2>
-                <label for="lowSelect">Low</label>
-                <input type="radio" name="priorityIssue" id="lowSelect" />
-                <label for="mediumSelect">Medium</label>
-                <input type="radio" name="priorityIssue" id="mediumSelect" />
-                <label for="highSelect">High</label>
-                <input type="radio" name="priorityIssue" id="highSelect" />
+                <label for="lowRadioInput">Low</label>
+                <input
+                    type="radio"
+                    name="priorityOfIssue"
+                    id="lowRadioInput"
+                    value="Low"
+                />
+                <label for="mediumRadioInput">Medium</label>
+                <input
+                    type="radio"
+                    name="priorityOfIssue"
+                    id="mediumRadioInput"
+                    value="Medium"
+                />
+                <label for="highRadioInput">High</label>
+                <input
+                    type="radio"
+                    name="priorityOfIssue"
+                    id="highRadioInput"
+                    value="High"
+                />
             </div>
             <div>
                 <label for="issueCategorySelect"
@@ -64,7 +79,7 @@
                     type="file"
                     name="relevantImage"
                     id="imageInput"
-                    accept="img"
+                    accept="image/*"
                 />
             </div>
             <div>
