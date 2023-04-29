@@ -28,20 +28,34 @@
             </div>
             <div>
                 <p>Attendance Status</p>
-                <label for="yesChoice">Yes</label>
-                <input type="radio" name="attendanceStatus" id="yesChoice" />
-                <label for="noChoice">No</label>
-                <input type="radio" name="attendanceStatus" id="noChoice"   
+                <label for="yesRadioInput">Yes</label>
+                <input
+                    type="radio"
+                    name="attendanceStatus"
+                    id="yesRadioInput"
+                    value="Yes"
+                />
+                <label for="noRadioInput">No</label>
+                <input
+                    type="radio"
+                    name="attendanceStatus"
+                    id="noRadioInput"
+                    value="No"
                 />
             </div>
             <div>
-                <label for="numberInput">Enter Number of Guests you are bringing</label>
+                <label for="numberInput"
+                    >Enter Number of Guests you are bringing</label
+                >
                 <input
                     type="number"
                     name="guestsNumber"
                     id="numberInput"
                     max="5"
-                <label for="preferredMealSelect">Select Your Meal preference</label>
+                />
+                <label for="preferredMealSelect"
+                    >Select Your Meal preference</label
+                >
                 <select name="mealPreference" id="preferredMealSelect">
                     <option value="Vegetarian">Vegetarian</option>
                     <option value="Non-Vegetarian">Non-Vegetarian</option>
@@ -50,7 +64,9 @@
                 </select>
             </div>
 
-            <label for="notesTextarea">Add any additional notes or requests</label>
+            <label for="notesTextarea"
+                >Add any additional notes or requests</label
+            >
             <textarea
                 name="usersNotes"
                 id="notesTextarea"
