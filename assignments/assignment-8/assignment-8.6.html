@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Assignment-8.5</title>
+    </head>
+    <body>
+        <h1>Event RSVP</h1>
+        <form>
+            <div>
+                <label for="fullNameInput">Your Full Name</label>
+                <input
+                    type="text"
+                    placeholder="Full Name"
+                    name="fullName"
+                    id="fullNameInput"
+                />
+
+                <label for="emailInput">Your Email</label>
+                <input
+                    type="email"
+                    placeholder="Email"
+                    name="email"
+                    id="emailInput"
+                />
+            </div>
+            <div>
+                <p>Attendance Status</p>
+                <label for="yesRadioInput">Yes</label>
+                <input
+                    type="radio"
+                    name="attendanceStatus"
+                    id="yesRadioInput"
+                    value="Yes"
+                />
+                <label for="noRadioInput">No</label>
+                <input
+                    type="radio"
+                    name="attendanceStatus"
+                    id="noRadioInput"
+                    value="No"
+                />
+            </div>
+            <div>
+                <label for="numberInput"
+                    >Enter Number of Guests you are bringing</label
+                >
+                <input
+                    type="number"
+                    name="guestsNumber"
+                    id="numberInput"
+                    max="5"
+                />
+                <label for="preferredMealSelect"
+                    >Select Your Meal preference</label
+                >
+                <select name="mealPreference" id="preferredMealSelect">
+                    <option value="Vegetarian">Vegetarian</option>
+                    <option value="Non-Vegetarian">Non-Vegetarian</option>
+                    <option value="Vegan">Vegan</option>
+                    <option value="Gluten-Free">Gluten-Free</option>
+                </select>
+            </div>
+
+            <label for="notesTextarea"
+                >Add any additional notes or requests</label
+            >
+            <textarea
+                name="usersNotes"
+                id="notesTextarea"
+                cols="30"
+                rows="5"
+            ></textarea>
+
+            <input type="submit" value="Submit" />
+        </form>
+    </body>
+</html>

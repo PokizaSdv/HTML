@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Assignment-8.3</title>
+    </head>
+    <body>
+        <h1>Job Application</h1>
+        <form>
+            <div>
+                <label for="fullNameInput">Full Name</label>
+                <input
+                    type="text"
+                    placeholder="Full Name"
+                    name="fullName"
+                    id="fullNameInput"
+                />
+
+                <label for="phoneNumberInput">Contact Number</label>
+                <input
+                    type="tel"
+                    placeholder="Phone Number"
+                    name="phoneNumber"
+                    id="phoneNumberInput"
+                />
+
+                <label for="emailInput">Your Email</label>
+                <input
+                    type="email"
+                    placeholder="Email"
+                    name="email"
+                    id="emailInput"
+                />
+            </div>
+
+            <div>
+                <label for="coverLetterTextarea"
+                    >Please write your cover letter here</label
+                >
+                <textarea
+                    name="applicantCoverLetter"
+                    id="coverLetterTextarea"
+                    cols="30"
+                    rows="2"
+                ></textarea>
+
+                <label for="fileInput">Upload Your Resume in PDF format</label>
+                <input
+                    type="file"
+                    name="applicantResume"
+                    id="fileInput"
+                    accept="PDF"
+                />
+            </div>
+            <div>
+                <label for="educationLevelSelect"
+                    >Select your highest Level of Education</label
+                >
+                <select
+                    name="applicantEducationLevel"
+                    id="educationLevelSelect"
+                >
+                    <option value="High School">High School</option>
+                    <option value="Bachelor's Degree">Bachelor's Degree</option>
+                    <option value="Master's Degree">Master's Degree</option>
+                    <option value="Ph.D.">Ph.D.</option>
+                </select>
+            </div>
+            <div>
+                <label for="additionalCertificationTextarea"
+                    >List your any additional Qualifications and Certifications
+                    here</label
+                >
+                <textarea
+                    name="applicantsAdditionalCertifications"
+                    id="additionalCertificationTextarea"
+                    cols="30"
+                    rows="3"
+                ></textarea>
+            </div>
+
+            <input type="submit" value="Submit" />
+        </form>
+    </body>
+</html>
