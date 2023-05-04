@@ -1,0 +1,31 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: "Open Sans", sans-serif;
+    max-width: 1440px;
+    width: 100%;
+    height: auto;
+}
+
+.header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    color: blue;
+    background-color: beige;
+}
+
+.assignments {
+    width: 100%;
+
+    padding-left: 80px;
+    font-size: 18px;
+    line-height: 30px;
+    background-color: ghostwhite;
+}
+
+.assignment_8 {
+    padding-left: 50px;
+}
