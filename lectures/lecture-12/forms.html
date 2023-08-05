@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Inputs</title>
+    </head>
+    <body>
+        <h1>We will understand the forms/inputs</h1>
+
+        <h2>Signup Form</h2>
+        <form>
+            <label for="fullNameInput">Full name</label>
+            <input
+                type="text"
+                placeholder="Full name"
+                id="fullNameInput"
+                name="fullName"
+                required
+                autofocus
+                value="Safarali"
+            />
+            <label for="emailInput">Email</label>
+            <input
+                type="email"
+                placeholder="Email"
+                id="emailInput"
+                name="email"
+                required
+                value="ali@ali.com"
+            />
+            <label for="passwordInput">Password</label>
+            <input
+                type="password"
+                placeholder="Password"
+                id="passwordInput"
+                name="password"
+                required
+            />
+            <label for="checkboxInput">I promise everything is correct</label>
+            <input type="checkbox" id="checkboxInput" name="promise" required />
+            <div>
+                <p>What is your gender</p>
+                <label for="male">Male</label>
+                <input type="radio" id="male" name="gender" />
+                <label for="female">Female</label>
+                <input type="radio" id="female" name="gender" />
+            </div>
+            <input type="reset" value="Reset Form Data" />
+            <label for="profileImage">Upload your image</label>
+            <input type="file" name="avatar" id="profileImage" />
+            <label for="telInput">Phone Number: 231-456-7890</label>
+            <input
+                type="tel"
+                required
+                id="telInput"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                name="phoneNumber"
+            />
+
+            <label for="dobInput">Data of birth</label>
+            <input
+                type="date"
+                name="dob"
+                id="dobInput"
+                max="2007-01-01"
+                min="1983-01-01"
+            />
+            <label for="ageInput">Age</label>
+            <input type="number" id="ageInput" name="age" min="14" max="40" />
+
+            <input type="submit" value="Sign up" />
+        </form>
+    </body>
+</html>
+
+<!-- Purpose of forms in web development
+In web development, forms are essential for enabling user interaction, data collection, and communication between users and a website or web application. They play a crucial role in various aspects of a site's functionality and user experience. Here are some primary purposes of forms in web development:
+
+User Input: Forms provide a structured way for users to enter data or make selections, which can be processed and stored by a website or application. They usually consist of input fields, text areas, radio buttons, checkboxes, and dropdown menus that allow users to submit information.
+Authentication and Authorization: Forms such as login and registration forms are commonly used for user authentication and authorization. They help verify a user's identity, grant access to restricted content, and manage user permissions within a site or application.
+Data Collection: Forms facilitate data collection from users for various purposes, such as surveys, contact forms, feedback forms, and email subscription forms. This data can be used to improve website content, user experience, and marketing strategies or stored for further analysis.
+E-commerce: In e-commerce websites, forms are used to manage various processes, such as adding items to a shopping cart, entering shipping and billing information, and processing payments during the checkout process.
+Search Functionality: Forms provide an interface for users to enter search queries on a website or application, helping them find relevant information more efficiently.
+User-Generated Content: Forms enable users to contribute content to a website or application, such as comments, reviews, or forum posts. This fosters user engagement, builds a sense of community, and can generate valuable insights for the site owner.
+Communication: Contact and support forms allow users to communicate with website owners, administrators, or customer service teams. They can be used for inquiries, requests, bug reports, or suggestions, helping to improve customer support and user satisfaction.
+In summary, forms play a vital role in web development by facilitating user interaction, data collection, and communication between users and websites or web applications. They contribute significantly to the overall functionality, user experience, and effectiveness of a site or application. -->
+
+<!-- Input types
+The idea behind using HTML inputs is to provide a way for users to enter data on a web page. Inputs allow web developers to capture user input such as text, numbers, dates, etc.
+
+Inputs are typically used in HTML forms, which allow users to input data and then submit that data to a server for processing.
+
+For example, a web developer might use inputs to create a registration form for a website. The form might include inputs for the user's name, email address, password, and other information. When the user fills out the form and submits it, the data is sent to the server, which can be processed and stored in a database.
+
+Covered Topics
+Elements
+<input>
+<label>
+Attributes
+type
+for
+id
+required
+min, max
+autofocus
+name
+value
+Input and its type attribute
+Lets say we want to create an input to capture user email. We will use the <input/> element. However, Inputs are used for different types of data. That is why we must specify the type attribute for Input. In our case it is email .
+
+The type attribute of an input element is used to define the type of data that can be entered into the input field. Different types of data require different input methods and formatting, so specifying the correct type is important for both usability and accessibility.
+Here is the complete version: <input type="email" /> and the result on browser is below:
+
+
+
+Label
+Without labels, users may not know which input field is intended for which information. This can confuse and lead to user errors. For example, if an input field captures the user's email address, the user may not know that the field is intended for this purpose without a label. This problem becomes even more significant when multiple input fields, such as first and last names, capture different information. By including clear and concise labels for each input field, users can easily understand the required information and reduce the likelihood of errors or frustration.
+
+Here are the Inputs for Email, First name, and Last name:
+
+
+
+It looks terrible, right? Let me show you the power of Labels:
+
+
+
+Now, the User can distinguish what Input is for what. And that is how out HTML looks like:
+
+Labels are used to associate a text label with an input element in an HTML form. The label provides a textual description of what data should be entered into the input field, while the input element captures the user's data.
+
+
+
+Here's how labels work in more detail:
+
+The <label> element is used to create a label for an input field. The label is typically placed before or after the input element.
+The for attribute of the <label> element is used to associate the label with the input element. The for attribute value should match the id attribute of the input element.
+When the user clicks on the label, the corresponding input element receives focus, making entering data into the correct input field easier.
+Screen readers also use labels to provide additional information to visually impaired users. When a screen reader encounters a label, it reads its text and provides additional information about the input field.
+Overall, labels provide a clear and concise way to associate a text label with an input field in an HTML form. They are essential for ensuring users know what data to enter into each input field. They can also improve the accessibility of web content for users who rely on assistive technologies.
+
+Input types
+text: Used for capturing single-line or multi-line text input.
+email: Used for capturing email addresses.
+password: Used for capturing passwords, with the characters entered being hidden.
+checkbox: Allows users to select one or more options from a list of choices.
+radio: Allows users to select one option from a list of choices.
+submit: Creates a button that submits the form data to a server. *The label is not needed
+reset: Creates a button that resets the form to its original state.
+file: Allows users to upload a file from their device.
+hidden: Hides user data but allows it to be submitted with a form. *Skip it for now until JavaScript.
+date: Provides a date selector for users to choose a date.
+time: Provides a time selector for users to choose a time.
+datetime-local: Provides a date and time selector for users to choose a date and time.
+number: Used for capturing numerical input.
+range: Lets users select a value from a range of values.
+color: Lets users select a color from a color picker.
+search: Used for capturing search queries.
+tel: Used for capturing telephone numbers.
+url: Used for capturing URLs.
+month: Provides a month and year selector for users to choose a month.
+week: Provides a week selector for users to choose a week.
+image: Creates a clickable image that can trigger a JavaScript function. The src attribute specifies the image to be used, and the alt attribute provides alternative text for the image for visually impaired users. *The label is not needed; * Test it. However, it is not used in the Industry currently.
+Form
+The HTML <form> element is used to create an HTML form for user input. The <form> element is a container for input elements, such as text fields, checkboxes, radio buttons, submit buttons, etc.
+
+Understanding name and value attribute
+The "name" attribute in an input element specifies the name of the input control. This name is used to identify the input value when the form is submitted to the server. The name attribute should be unique within the form.
+
+For example, if you have a form with two input elements, one for the user's full name and another for their email address, you can give them the names "name" and "email," respectively:
+
+
+
+In this example, when the user submits the form, the server will receive the data in name=value pairs, where the name is the name attribute's value, and the value is the user's input.
+
+Guidelines to consider when choosing names for your input elements
+Use camelCase such as fullName, firstName, preferredWeekday and etc.
+You should be able to ask a question using it:
+If you have an input to capture user age, than ask yourself how you are going to ask this question in real life? Probably, what is your age is better than what is your ageInput
+If user need to make a selection between preferred languages using radio input, than preferredLanguage is right name.
+It should be unique within your webpage. -->
