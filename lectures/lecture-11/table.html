@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>HTML Table with Sections</title>
+        <style>
+            table {
+                border-collapse: collapse;
+                width: 50%;
+            }
+            th,
+            td {
+                border: 1px solid black;
+                text-align: center;
+            }
+            th {
+                background-color: #f2f2f2;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <caption>
+                Employee Data
+            </caption>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Department</th>
+                    <th>Salary (USD)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>John Doe</td>
+                    <td>HR</td>
+                    <td>50,000</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Jane Smith</td>
+                    <td>IT</td>
+                    <td>65,000</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Alice Johnson</td>
+                    <td>Finance</td>
+                    <td>60,000</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="3">Total Salaries</th>
+                    <td>175,000</td>
+                </tr>
+            </tfoot>
+        </table>
+    </body>
+</html>
+
+<!--   Purpose of tables in web development
+Tables are a commonly used element in web development to display data in a structured and organized manner. They allow developers to present information in a grid-like format, with rows and columns that make comparing and analyzing data accessible.
+
+While using tables for creating layouts and navigation menus has become less common in modern web development, tables are still commonly used for displaying tabular data. Tables can help to make large amounts of data more readable and easier to understand, and they can also be used to create sortable and searchable data tables.
+
+Some common uses of tables in web development include:
+
+Displaying data: Tables can be used to present data in a logical and organized way, making it easy for users to understand and compare different pieces of information.
+Creating sortable and searchable data tables: Tables can be used to create data tables that can be sorted and searched, making it easy for users to find the information they need.
+Displaying pricing or product information: Tables can be used to display pricing or product information in a clear and organized manner, making it easy for users to compare different products or pricing plans.
+While tables are helpful in web development, using them appropriately and avoiding overusing them is essential. Tables can sometimes create accessibility issues for users with visual impairments or those using assistive technologies, so it's essential to use alternative methods of presenting data, such as lists or semantic HTML, when appropriate. -->
+
+<!-- Table elements
+<table>: The <table> tag defines a table in HTML. It is used to create a structured, grid-like layout to display data in rows and columns.
+<thead>: The <thead> tag defines a set of rows that make up the header of a table. It is used to group the header content in an HTML table. The <thead> element should be used in conjunction with the <tbody> and <tfoot> elements.
+<tbody>: The <tbody> tag defines a set of rows that make up the main body of a table. It is used to group the main content in an HTML table. The <tbody> element should be used in conjunction with the <thead> and <tfoot> elements.
+<tfoot>: The <tfoot> tag defines a set of rows that make up the footer of a table. It is used to group the footer content in an HTML table. The <tfoot> element should be used in conjunction with the <thead> and <tbody> elements.
+<tr>: The <tr> tag defines a row in an HTML table. It is used to group cells in a single row.
+<th>: The <th> tag defines a header cell in an HTML table. It is used to represent the header of a column or a row. By default, text in <th> elements is bold and centered.
+<td>: The <td> tag defines a standard cell in an HTML table. It is used to represent the data cells in a table, containing the actual data to be displayed.
+colspan is an attribute used in HTML table cells (<td> or <th>) to specify how many columns a cell should span horizontally. It allows you to merge cells horizontally, creating a single cell that takes up the space of multiple cells. This is useful for creating headers that span multiple columns or consolidating data that spans multiple columns.
+These tags work together to create a well-structured and organized HTML table that can be styled with CSS to improve its appearance. -->
