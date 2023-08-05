@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Application Form</title>
+    </head>
+    <body>
+        <div>
+            <h1>Application Form</h1>
+            <form>
+                <label for="fullNameInput">Full name</label>
+                <input
+                    type="text"
+                    placeholder="Full name"
+                    id="fullNameInput"
+                    name="fullName"
+                    required
+                    autofocus
+                />
+                <label for="emailInput">Email</label>
+                <input
+                    type="email"
+                    placeholder="Email"
+                    id="emailInput"
+                    name="email"
+                    required
+                />
+
+                <label for="cohortSelect">Select your cohort</label>
+                <select name="usersCohort" id="cohortSelect">
+                    <option value="Brooklyn">Brooklyn, NY</option>
+                    <option value="Chicago">Chicago, IL</option>
+                    <option value="Online">Online, Remote</option>
+                </select>
+                <label for="statement">Statement</label>
+                <textarea
+                    name="statement"
+                    id="statement"
+                    cols="30"
+                    rows="12"
+                ></textarea>
+                <input type="submit" value="Submit My Application" />
+            </form>
+        </div>
+    </body>
+</html>
+
+<!-- Textarea and select elements 
+
+Select
+The "select" element in HTML creates a dropdown list of options within a web form, allowing users to choose one from a predefined list. It is beneficial when offering multiple choices without taking up too much space on the page.
+
+Here's a basic example of a select element in HTML:
+
+
+
+In this example, the "select" element has an "id" attribute to identify it uniquely and a "name" attribute to be used when submitting the form data. The "option" elements nested inside the "select" element represent the individual choices available to the user. Each "option" has a "value" attribute, which is the actual data that will be sent to the server when the form is submitted, and the text content between the opening and closing "option" tags is what the user sees in the dropdown list.
+
+When a user selects an option, the "value" attribute of the selected option is used as the value for the "select" element. This value can then be accessed and processed by JavaScript or a server-side language when the form is submitted.
+
+Text Area
+The "textarea" element in HTML is used to create a multi-line text input field within a web form, allowing users to input larger amounts of text, such as a message or a comment. This is particularly useful when you want users to be able to enter more than just a single line of text.
+
+Here's a basic example of a textarea element in HTML:
+
+
+
+In this example, the "textarea" element has an "id" attribute to identify it uniquely and a "name" attribute to be used when submitting the form data. The "rows" and "cols" attributes define the visible size of the text area, specifying the number of visible text lines and the number of characters per line, respectively. These attributes can be adjusted according to your needs.
+
+Users can type or paste the text into the text area, and the text will automatically wrap to the next line when it reaches the defined width (number of columns). When a user submits the form, the text inside the text area is sent as part of the form data and can be processed by JavaScript or a server-side language.
+
+The "textarea" element should contain no content between the opening and closing tags. If you want to set an initial value for the textarea, add the text directly between the opening and closing "textarea" tags.-->
