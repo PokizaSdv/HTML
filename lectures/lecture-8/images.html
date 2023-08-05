@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Images</title>
+    </head>
+    <body>
+        <img src="./images/building/apartments.jpg" alt="Apartments" />
+        <picture>
+            <source srcset="./images/nature/spring.webp" type="image/webp" />
+            <source srcset="./image/nature/spring.jpeg" type="image/jpeg" />
+            <img src="./images/nature/spring.jpg" alt="Spring" />
+        </picture>
+    </body>
+</html>
+
+<!--  Images
+
+The img (image) tag is used to display images on a webpage. It is a self-closing tag and does not require a closing tag. The src attribute is used to specify the source URL of the image file. You can also use the alt attribute to provide descriptive text for the image, which will be displayed if the image cannot be loaded or for accessibility purposes (e.g., screen readers).
+
+Example: <img src="utah.jpg" alt="A description of the image" />
+
+WebP
+WebP is an image format developed by Google that provides superior image quality with a smaller file size, resulting in faster loading times and improved website performance. Here are some reasons why you might want to consider using WebP:
+
+Smaller file size: WebP images can be up to 34% smaller than comparable JPEG or PNG images, resulting in faster loading times for your website. This can help improve user experience and reduce bounce rates.
+Improved image quality: WebP images use advanced compression algorithms to maintain image quality while reducing file size. This means you can deliver high-quality images without sacrificing website performance.
+Supports transparency and animation: WebP supports both transparency and animation, making it a versatile format for a wide range of use cases, such as logos, icons, and animated GIFs.
+However, not all web browsers support the WebP format, particularly older versions of popular browsers. To ensure maximum compatibility and a seamless user experience, it's important to provide fallback formats for unsupported browsers, such as JPEG or PNG.
+
+One way to provide a fallback image is to use the <picture> element with the <source> and <img> elements, as shown in the example below:
+
+<picture>
+    <source srcset="utah.webp" type="image/webp" />
+    <source srcset="utah.jpeg" type="image/jpeg" />
+    <img src="utah.jpg" alt="Utah Mountains" />
+</picture>
+
+
+Readings
+Image tag: https://www.w3schools.com/tags/tag_img.asp
+Resources
+Convert jpeg to webp: https://convertio.co/jpeg-webp/
+Convert jpg to webp: https://convertio.co/jpg-webp/
+Free images: https://unsplash.com-->
